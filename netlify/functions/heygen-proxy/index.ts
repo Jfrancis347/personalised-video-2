@@ -1,6 +1,6 @@
 import { Handler } from '@netlify/functions';
 
-const HEYGEN_API_URL = 'https://api.heygen.com/v1';
+const HEYGEN_API_URL = 'https://api.heygen.com/v2';
 const HEYGEN_API_KEY = process.env.HEYGEN_API_KEY;
 
 export const handler: Handler = async (event) => {
