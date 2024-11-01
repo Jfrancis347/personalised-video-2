@@ -29,7 +29,7 @@ export const handler: Handler = async (event) => {
     const response = await fetch(`${HEYGEN_API_URL}${endpoint}`, {
       method,
       headers: {
-        'Authorization': `Bearer ${HEYGEN_API_KEY}`,
+        'X-Api-Key': `${HEYGEN_API_KEY}`,
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
